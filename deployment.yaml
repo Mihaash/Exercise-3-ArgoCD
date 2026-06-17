@@ -19,10 +19,7 @@ spec:
     spec:
       containers:
       - name: project
-
         image: nginx:latest
-
         imagePullPolicy: Always
-
         ports:
-        - containerPort: 8080
+        - containerPort: 80
