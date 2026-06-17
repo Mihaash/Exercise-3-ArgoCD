@@ -20,7 +20,7 @@ spec:
       containers:
       - name: project
 
-        image: mickey06/project:tagname
+        image: mickey06/project
 
         imagePullPolicy: Always
 
