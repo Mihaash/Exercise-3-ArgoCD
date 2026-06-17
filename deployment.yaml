@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: project
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: project
+
+  template:
+    metadata:
+      labels:
+        app: project
+
+    spec:
+      containers:
+      - name: project
+
+        image: mickey06/project:tagname
+
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 8080
